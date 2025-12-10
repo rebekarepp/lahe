@@ -1,0 +1,307 @@
+/* ---------------- GLOBAL ---------------- */
+* {
+    box-sizing: border-box;
+}
+
+body, p, h1, h2, h3, nav, a, footer {
+    font-family: 'Big Shoulders Display', sans-serif;
+    margin: 0;
+    color: #555;
+}
+
+body {
+    background-color: #d5dce2;
+}
+
+/* ---------------- TITLE SECTIONS ---------------- */
+.title-section {
+    background-color: #E9EDF0;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.title-main {
+    font-family: 'Splash', cursive;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: #3a3a3a;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+.decor-header {
+    font-family: 'Little Angel Demo', cursive;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #3a3a3a;
+    text-align: center;
+    margin: 3rem auto 2rem;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.top-nav {
+    background-color: #D5DBDF; 
+    padding: 1rem 0;
+}
+
+.top-nav nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.top-nav nav li a {
+    text-decoration: none;
+    color: #555;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1.375rem;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.top-nav nav li a:hover {
+    background-color: #527A96;
+    color: #E9EDF0;
+    transform: scale(1.1);
+}
+
+#navbar ul li a.current {
+    background-color: #527A96;
+    color: #EDE7E1;
+}
+
+/* ---------------- MAIN CONTENT ---------------- */
+.welcome-section {
+    padding-bottom: 3rem;
+}
+
+.content-wrapper {
+    width: min(90%, 1100px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.text-block {
+    flex: 1 1 300px;
+    max-width: 700px;
+}
+
+.text-block p {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    line-height: 1.55;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    background-color: #527A96;
+    height: 2px;
+    opacity: 0.85;
+    margin: 1.5rem auto;
+}
+
+.big-divider {
+    width: 85%;
+    height: 2px;
+    background: #527A96;
+    margin: 3rem auto;
+}
+
+/* ---------------- IMAGES ---------------- */
+.image-pilt {
+    flex: 1 1 250px;
+    max-width: 400px;
+}
+
+.image-box {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 1.4rem 1.7rem 0.6rem rgba(0,0,0,0.25);
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    padding: 2rem 0;
+    background-color: #E9EDF0;
+    text-align: center;
+}
+
+/* ---------------- VIDEO GAME / ART SECTIONS ---------------- */
+.vg-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* align text and images at top */
+    justify-content: center;
+    gap: 2rem;
+    width: min(95%, 1200px);
+    margin: auto;
+    padding: 2rem;
+}
+
+.text-block-game {
+    flex: 1 1 450px; /* fixed width for alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.game-title {
+    color: #4A4A4A;
+    font-family: 'Little Angel Demo', cursive;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    margin-bottom: 1rem;
+}
+
+.game-text {
+    color: #696969;
+    font-size: clamp(0.9rem, 2.4vw, 1rem);
+    line-height: 1.5;
+}
+
+.game-image,
+.a4-image {
+    flex: 1 1 450px; /* same width as text-block-game for alignment */
+    max-width: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+
+/* Keep A4 shape */
+.a4-image {
+    width: 22rem;
+    height: calc(22rem * 1.414); /* maintain A4 ratio */
+    margin: 0 auto;
+}
+
+/* ---------------- BACKGROUNDS ---------------- */
+.bg-one { background-color: #D5DBDF; }
+.bg-two { background-color: #E9EDF0; }
+
+/* ---------------- MY WORKS ---------------- */
+.my-works, .my-works-two {
+    padding: 3rem 5vw;
+}
+
+.my-works, .my-works-two h2 {
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    margin-bottom: 1.5rem;
+    color: #4A4A4A;
+    font-family: 'Little Angel Demo', cursive;
+    text-align: center;
+}
+
+.my-works-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.my-works-row img {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ---------------- CAROUSEL ---------------- */
+.carousel-wrapper {
+    width: min(90%, 900px);
+    margin: 0 auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-item h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Little Angel Demo', cursive;
+    font-size: clamp(1.6rem, 4vw, 2rem);
+}
+
+/* ---------------- TRAVEL SECTION ---------------- */
+.travel-section {
+    padding: 2rem 0;
+}
+
+.travel-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: min(95%, 1200px);
+    margin: auto;
+    padding: 2rem 0;
+    align-items: stretch;
+}
+
+.travel-text {
+    flex: 1 1 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.travel-title {
+    font-family: 'Little Angel Demo', cursive;
+    font-size: clamp(1.8rem, 4vw, 2.2rem);
+    color: #4A4A4A;
+    margin-bottom: 1rem;
+}
+
+.travel-text p {
+    color: #696969;
+    font-size: clamp(0.9rem, 2.4vw, 1rem);
+    line-height: 1.5;
+}
+
+.travel-carousel {
+    flex: 1 1 450px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.travel-carousel img {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* ---------------- WINGS ---------------- */
+.title-wrapper {
+    position: relative; 
+    display: inline-block;
+}
+
+.wing {
+    position: absolute;
+    top: 50%; 
+    width: 3em;
+    transform: translateY(-50%);
+}
+
+#wing-left {
+    left: -3.5em;
+}
+
+#wing-right {
+    right: -3.5em;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <title>Minu Hobileht</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Splash&family=Big+Shoulders+Display:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.1001fonts.com/little-angel-demo-font.html"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- TOP NAV -->
+    <header class="top-nav">
+      <nav id="navbar">
+        <ul>
+          <li><a class="current" href="Main.html">Hobileht</a></li>
+          <li><a href="videomängud.html">Videomängud</a></li>
+          <li><a href="reisimine.html">Reisimine</a></li>
+          <li><a href="kunst.html">Kunst</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="title-section">
+      <div class="title-wrapper">
+        <img
+          src="images/right-wing.gif"
+          class="wing"
+          id="wing-left"
+          alt="Left Wing"
+        />
+        <h1 class="title-main">Minu Hobileht</h1>
+        <img
+          src="images/left-wing.gif"
+          class="wing"
+          id="wing-right"
+          alt="Right Wing"
+        />
+      </div>
+    </section>
+
+    <!-- MAIN -->
+
+    <section class="welcome-section">
+      <h2 class="decor-header">Tere tulemast minu unistuste maailma!</h2>
+
+      <div class="content-wrapper">
+        <div class="text-block">
+          <div class="divider"></div>
+          <p>
+            Tere! Minu nimi on Rebeka ja olen 19-aastane UI/UX disaini õpilane
+            Põlvast. Mulle meeldib uusi asju proovida. Peamiselt meeldib mulle
+            vabal ajal mängida videomänge, et oma mõtteid eemale viia. Vahel
+            meeldib mulle lugeda ka erinevaid raamatuid. Olen ka väiksest saati
+            tegelenud kunstiga. Lisaks meeldib mulle vaadata ka erinevaid
+            seriaale ning Jaapani animatsioone. Kindlasti on suur osa minu ajast
+            veedetud muusika kuulamisele. Mul on tihti raske mõelda oma
+            hobidele, sest ma tihti ainult magan, kuulan muusikat ja teen ühte
+            kolmest lehel mainitud hobist(või olen TikTokis).
+          </p>
+
+          <div class="divider"></div>
+
+          <p>
+            Tulevikus tahaksin ma õppida ära Hiina keele kuna mul on selle vastu
+            viimasel ajal huvi tekkinud. Lisaks olen alati tahtnud õppida mingit
+            instrumenti, aga pole selleni veel jõudnud. Tahaks ka lihtsalt
+            üleüldiselt oma teadmisi suurendada, õppides huvitavaid fakte
+            erinevate teemade kohta. Samuti tahaks talvel kunagi kas uisutamise
+            või lumelauaga sõitmise selgeks saada. Kuigi vanasti tegelesin
+            korvpalliga, pole sellega ammu tegelenud nii et on ka võibolla aeg
+            tolleks. Kui mul kunagi väga igav hakkab tahaks õppida
+            meditsiinilisi asju nagu näiteks anatoomia ja erinevad haigused koos
+            sümptomitega, sest armastan House seriaali.
+          </p>
+        </div>
+
+        <div class="image-pilt">
+          <img class="image-box" img src="images/angel.jpg" alt="Angel" />
+        </div>
+      </div>
+
+      <div class="big-divider"></div>
+      <div class="carousel-wrapper">
+        <div id="carouselMainFade" class="carousel slide carousel-fade mt-4">
+          <div class="carousel-inner">
+            <!-- READING -->
+            <div class="carousel-item active">
+              <h2>Teekondade rõõm</h2>
+              <a href="reisimine.html">
+                <img
+                  src="images/giftravel.gif"
+                  class="d-block w-100"
+                  alt="Reisimine"
+                />
+              </a>
+              <div class="carousel-MAIN d-none d-md-block"></div>
+            </div>
+
+            <!-- ART -->
+            <div class="carousel-item">
+              <h2>Loovuse ilu</h2>
+              <a href="kunst.html">
+                <img
+                  src="images/gifart.gif"
+                  class="d-block w-100"
+                  alt="Kunst"
+                />
+              </a>
+              <div class="carousel-MAIN d-none d-md-block"></div>
+            </div>
+
+            <!-- VIDEO GAMES -->
+            <div class="carousel-item">
+              <h2>Hetke kirg</h2>
+              <a href="videomängud.html">
+                <img
+                  src="images/gifgame.gif"
+                  class="d-block w-100"
+                  alt="Videomängud"
+                />
+              </a>
+              <div class="carousel-MAIN d-none d-md-block"></div>
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselMainFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselMainFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p>2025 Rebeka Repp. Loodud armastuse, pisikite ja unistustega</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
